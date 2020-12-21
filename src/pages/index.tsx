@@ -1,6 +1,7 @@
 import React from 'react'
 import { NextPage } from 'next'
 import Head from 'next/head'
+import { Hello } from 'src/components/Hello'
 import styles from 'src/styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Hello name="World" />
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
